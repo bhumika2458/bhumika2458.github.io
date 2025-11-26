@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bhumika B - Cybersecurity Student</title>
+
+<style>
+/* --- Import Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg1: #0a192f;
+  --bg2: #0f2238;
+  --panel-blue: #1e3a8a;
+  --panel-blue2: #1e40af;
+  --text-light: #e0e7ff;
+  --text-soft: #c7d2fe;
+  --accent: #3b82f6;
+  --accent2: #7c3aed;
+}
+
+/* --- Base Styling --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text-light);
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+/* --- Container --- */
+.card {
+  width: 100%;
+  max-width: 560px;      /* MOBILE-FIRST */
+  background: rgba(14, 27, 44, 0.92);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(94, 151, 255, 0.25);
+  box-shadow: 0 14px 40px rgb(0 0 0 / 0.45);
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Left Panel / Header Section --- */
+.header-panel {
+  background: linear-gradient(135deg, var(--panel-blue), var(--panel-blue2));
+  padding: 18px 20px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #93c5fd;
+  background: #0c1d45;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ebf8ff;
+}
+
+.subtitle {
+  margin-top: 4px;
+  font-size: 0.95rem;
+  color: #dbeafe;
+  line-height: 1.45;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: rgba(99, 179, 237, 0.3);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid #60a5fa;
+}
+
+/* --- Sections Inside Header --- */
+.section {
+  margin-top: 18px;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 7px 12px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1.5px solid #38bdf8;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7dd3fc;
+}
+
+/* --- Tabs (Horizontal Scroll on Mobile) --- */
+.tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 12px 16px 4px 16px;
+  background: rgba(255,255,255,0.02);
+}
+
+.tab {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 2px solid #93c5fd;
+  background: rgba(99, 179, 237, 0.2);
+  cursor: pointer;
+  color: var(--text-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.5);
+}
+
+/* --- Content Panel --- */
+.content-panel {
+  padding: 18px 22px 28px 22px;
+}
+
+.content-section {
+  display: none;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.content-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: #dbeafe;
+}
+
+.content-section ul {
+  margin-left: 18px;
+  margin-bottom: 12px;
+}
+
+.footer-note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #b7befc;
+  font-style: italic;
+}
+
+</style>
+</head>
+
+<body>
+<div class="card">
+
+  <!-- Header Panel -->
+  <div class="header-panel">
+
+    <div class="avatar">BB</div>
+
+    <div class="name">Bhumika B</div>
+
+    <div class="subtitle">
+      B.Tech Cybersecurity Student<br>
+      SRM Valliammai Engineering College
+    </div>
+
+    <div class="tag">Learning | Growing | Securing</div>
+
+    <div class="section">
+      <div class="section-title">Cybersecurity Interests</div>
+      <div class="chips">
+        <span class="chip">Ethical Hacking</span>
+        <span class="chip">Network Security</span>
+        <span class="chip">Digital Forensics</span>
+        <span class="chip">Data Protection</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Strengths</div>
+      <div class="chips">
+        <span class="chip">Dedicated</span>
+        <span class="chip">Responsible</span>
+        <span class="chip">Disciplined</span>
+        <span class="chip">Continuous Learner</span>
+        <span class="chip">Positive Mindset</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Connect</div>
+      <div class="subtitle" style="line-height:1.5;">
+         Email: bhumikabala2458@gmail.com<br>
+         LinkedIn: https://www.linkedin.com/in/bhumika-bala-9434a0322<br>
+         
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="about">About</button>
+    <button class="tab" data-tab="skills">Skills</button>
+    <button class="tab" data-tab="learning">Learning</button>
+    <button class="tab" data-tab="goals">Goals</button>
+    <button class="tab" data-tab="contact">Visitors</button>
+  </div>
+
+  <!-- Content -->
+  <div class="content-panel">
+
+    <div id="about" class="content-section active">
+      <h2>About Me</h2>
+      <p>
+        Hello, and welcome to my page. My name is Bhumika B, and I am currently pursuing my Bachelorâ€™s degree in Cybersecurity at SRM University. <br> <br>
+
+I chose cybersecurity because I am deeply interested in how digital systems work and how we can protect them from modern cyber threats. As technology grows, I believe our responsibility to secure data and privacy also becomes more important, and this belief motivates me to learn more every day.<br> <br>
+
+I see myself as a dedicated, responsible, and disciplined person. Even when I face difficulties, I try to stay positive, look for solutions, and keep moving forward.
+      </p>
+    </div>
+
+    <div id="skills" class="content-section">
+      <h2>Skills & Habits</h2>
+      <ul>
+        <li>Disciplined and organised learner</li>
+        <li>Responsible with tasks and deadlines</li>
+        <li>Positive attitude under challenges</li>
+        <li>Growing communication confidence</li>
+      </ul>
+    </div>
+
+    <div id="learning" class="content-section">
+      <h2>What I'm Learning</h2>
+      <ul>
+        <li>Ethical hacking and penetration testing</li>
+        <li>Network defence fundamentals</li>
+        <li>Digital forensics basics</li>
+        <li>Online cybersecurity tools and labs</li>
+      </ul>
+    </div>
+
+    <div id="goals" class="content-section">
+      <h2>Future Goals</h2>
+      <ul>
+        <li>Become a cybersecurity analyst</li>
+        <li>Solve real-world cybercrime cases</li>
+        <li>Help organisations protect data</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="content-section">
+      <h2>For Visitors</h2>
+      <p>
+        I am always happy to learn from new people, collaborate, or receive suggestions. Thank you for visiting my page!
+      </p>
+      <p class="footer-note">
+        "Your feedback is welcome ” it helps me grow.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+const tabs = document.querySelectorAll(".tab");
+const sections = document.querySelectorAll(".content-section");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.getAttribute("data-tab");
+
+    tabs.forEach((t) => t.classList.remove("active"));
+    sections.forEach((sec) => sec.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(target).classList.add("active");
+  });
+});
+</script>
+
+</body>
+</html>
